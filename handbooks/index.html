@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+        <head>
+                <meta charset="UTF-8"/>
+                <title>Handbooks</title>
+                <meta name="twitter:title" content="Handbooks"/>
+                <meta name="og:title" content="Handbooks"/>
+                <meta name="description" content="Handbooks"/>
+                <meta name="twitter:description" content="Handbooks"/>
+                <meta name="og:description" content="Handbooks"/>
+                <meta name="keywords" content="handbook"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+                <link rel="stylesheet" href="/css/basic.css" type="text/css"/>
+        </head>
+        <body>
+                <header>
+                        <ul class="menu">
+                                <li class="menu">
+                                        <a class="menu" href="https://ososo.io">HOME</a>
+                                </li>
+                                <li class="menu">
+                                        <a class="menu" href="https://ososo.io/archives">ARCHIVES</a>
+                                </li>
+                                <li class="menu">
+                                        <a class="menu" href="https://ososo.io/about">ABOUT</a>
+                                </li>
+                        </ul>
+                </header>
+                <br/><p><a href="freebsd">FreeBSD Handbook</a></p><p><a href="fedora">Fedora Handbook</a></p><p><a href="macosx">macOS Handbook</a></p><p>Compress</p><pre><code class="language-bash">tar -cf - ./folder | xz -c9e --threads=0 - &gt; ./compressed.xz
+</code></pre><p>OpenSSL encrypt/decrypt</p><pre><code class="language-bash">openssl enc -e -salt -pbkdf2 -aes-256-cfb -in notes.txt -out notes.txt.bin
+openssl enc -d -pbkdf2 -aes-256-cfb -in notes.txt.bin -out notes.txt
+</code></pre><p>OpenSSL - generate dhparam</p><pre><code class="language-bash">openssl dhparam -out ./dhparam.pem 4096
+</code></pre><p>GnuPG Usage</p><pre><code class="language-bash">gpg --encrypt --recipient [KEYID] --output notes.txt.gpg notes.txt
+gpg --sign --encrypt --recipient [KEYID] --output notes.txt.gpg notes.txt
+gpg --decrypt --output notes.txt notes.txt.gpg
+gpg --symmetric --cipher-algo AES256 --output notes.txt.gpg notes.txt
+
+gpg --list-keys --keyid-format LONG
+</code></pre><p>GnuPG Configuration</p><p><a href="https://www.gniibe.org/memo/software/gpg/keygen-25519.html">Creating newer ECC keys for GnuPG</a></p><p><a href="https://alexcabal.com/creating-the-perfect-gpg-keypair">Creating the perfect GPG keypair</a></p><p>export gpg keys:</p><p>https://gist.github.com/chrisroos/1205934</p><p>https://www.phildev.net/pgp/gpg<em>moving</em>keys.html</p><pre><code class="language-bash">gpg --export --armor KEYID &gt; PublicKey.asc
+gpg --export-secret-keys --armor KEYID &gt; SecretKey.asc
+gpg --export-ownertrust &gt; OwnerTrust.asc
+</code></pre><p>Generate SSH Keys</p><pre><code class="language-bash">ssh-keygen -t ed25519 -C "name@email.com"
+</code></pre><p>.vimrc</p><pre><code>syntax on
+set number
+set encoding=utf-8
+set expandtab
+set softtabstop=8
+set shiftwidth=8
+set cindent
+set autoindent
+set smartindent
+</code></pre><p>Run on background</p><pre><code class="language-bash">./a.out &gt; /dev/null 2&gt;&amp;1 &amp;
+</code></pre><p>Change permissions</p><pre><code class="language-bash">find . -type d -print0 | xargs -0 chmod 0755
+find . -type f -print0 | xargs -0 chmod 0644
+</code></pre>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+        </body>
+</html>

@@ -1,0 +1,146 @@
+/*
+@font-face {
+        font-family: "Latin Modern Roman";
+        src: url("../fonts/LMRoman10-Regular.woff2") format("woff2");
+}
+@font-face {
+        font-family: "Latin Modern Roman Caps";
+        src: url("../fonts/LMRomanCaps10-Regular.woff2") format("woff2");
+}
+@font-face {
+        font-family: "Latin Modern Mono";
+        src: url("../fonts/LMMono10-Regular.woff2") format("woff2");
+}
+
+html, body {
+        font-family: "Latin Modern Roman", sans-serif;
+        line-height: 1.6em;
+}
+.capital {
+        font-family: "Latin Modern Roman Caps", sans-serif;
+}
+*/
+
+html, body {
+        font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", Roboto, "Helvetica Neue", "Segoe UI", ui-sans-serif, sans-serif;
+        line-height: 1.6em;
+}
+
+header {
+        text-align: center;
+}
+ul.menu {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+}
+li.menu {
+        float: left;
+}
+a {
+        text-decoration: none;
+        color: #1F9BF3;
+}
+a.menu {
+        display: block;
+        padding: 1em 2em;
+        text-align: center;
+        font-size: 0.9em;
+}
+a.menu:hover {
+        color: #1F9BF3;
+}
+a.padding-right {
+        padding-right: 2em;
+}
+.padding-top {
+        padding-top: 5%;
+}
+.center-align {
+        text-align: center;
+}
+.higher-line {
+        line-height: 3em;
+}
+
+hr {
+        border: none;
+        border-bottom: 1px solid #999999;
+}
+
+pre, code {
+        font-family: "SF Mono", ui-monospace, monospace;
+}
+pre {
+        overflow: auto;
+        white-space: pre;
+        padding: 2em;
+        line-height: 1.6em;
+        border-radius: 0.3em;
+}
+code.insert {
+        border-radius: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+}
+
+@media(prefers-color-scheme: dark) {
+        html, body {
+                color: white;
+                background: #232323;
+        }
+        a.menu {
+                color: white;
+        }
+        a:hover {
+                color: white;
+        }
+        pre, code.insert {
+                background-color: #191919;
+        }
+}
+@media(prefers-color-scheme: light) {
+        html, body {
+                color: black;
+                background: white;
+        }
+        a:hover {
+                color: black;
+        }
+        a.menu {
+                color: black;
+        }
+        pre, code.insert {
+                background-color: #eeeeee;
+        }
+}
+@media(prefers-color-scheme: no-preference) {
+        html, body {
+                color: black;
+                background: white;
+        }
+        a:hover {
+                color: black;
+        }
+        a.menu {
+                color: black;
+        }
+        pre, code.insert {
+                background-color: #eeeeee;
+        }
+}
+
+@media (min-width: 750px) {
+        body {
+                padding-left: 20%;
+                padding-right: 20%;
+        }
+        a.menu {
+                padding: 1em 4em;
+        }
+        a.menu {
+                padding: 1em 4em;
+        }
+}
