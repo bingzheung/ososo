@@ -1,4 +1,3 @@
-/*
 @font-face {
         font-family: "Latin Modern Roman";
         src: url("../fonts/LMRoman10-Regular.woff2") format("woff2");
@@ -13,17 +12,12 @@
 }
 
 html, body {
-        font-family: "Latin Modern Roman", sans-serif;
+        font-family: Latin Modern Roman, -apple-system, BlinkMacSystemFont, SF Pro, Roboto, Helvetica Neue, Segoe UI, ui-sans-serif, sans-serif;
         line-height: 1.6em;
 }
-.capital {
-        font-family: "Latin Modern Roman Caps", sans-serif;
-}
-*/
 
-html, body {
-        font-family: -apple-system, BlinkMacSystemFont, "SF Pro", Roboto, "Helvetica Neue", "Segoe UI", ui-sans-serif, sans-serif;
-        line-height: 1.6em;
+.capital {
+        font-family: Latin Modern Roman Caps;
 }
 
 header {
@@ -71,7 +65,7 @@ hr {
 }
 
 pre, code {
-        font-family: "SF Mono", ui-monospace, monospace;
+        font-family: Latin Modern Mono, SF Mono, ui-monospace, monospace;
 }
 pre {
         overflow: auto;
