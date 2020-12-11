@@ -6,18 +6,20 @@ description: VS Code configuration backup
 `config.json`
 ```json
 {
-    "editor.fontFamily": "'SF Mono', 'Apple Color Emoji', 'PingFang TC', 'PingFang HK', 'Source Han Sans TC', 'PingFang SC', 'Source Han Sans SC', monospace",
-    "editor.fontSize": 13,
+    "editor.fontFamily": "'SF Mono', 'GenYoGothic TW', 'PingFang HK', 'Source Han Sans K', monospace, 'Apple Color Emoji'",
+    "editor.fontSize": 14,
     "editor.fontLigatures": true,
     "editor.tabSize": 8,
-    "editor.wordWrapColumn": 120,
+    "editor.wordWrapColumn": 150,
     "editor.wordWrap": "wordWrapColumn",
     "editor.minimap.enabled": false,
-    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', sans-serif",
+    "editor.largeFileOptimizations": false,
+    "diffEditor.maxComputationTime": 10000,
+    "markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'SF Pro', 'GenYoGothic TW', 'PingFang HK', 'Source Han Sans K', sans-serif, 'Apple Color Emoji'",
     "window.restoreWindows": "none",
-    "window.titleBarStyle": "native",
-    "workbench.colorTheme": "Default Light+",
     "workbench.startupEditor": "newUntitledFile",
+    "workbench.colorTheme": "Default Light+",
+    "workbench.settings.editor": "json",
     "workbench.colorCustomizations": {
         "activityBar.background": "#F0F0F0",
         "activityBar.foreground": "#333333",
@@ -26,6 +28,8 @@ description: VS Code configuration backup
         "statusBar.foreground": "#333333",
         "statusBar.noFolderBackground": "#F5F5F5",
         "statusBar.noFolderForeground": "#333333"
-    }
+    },
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false
 }
 ```
