@@ -6,11 +6,11 @@ html, body {
 a {
         font-size: 0.9em;
 }
-div.heading {
+.headline {
         padding-top: 10%;
         font-size: 3em;
 }
-div.message{
+.message {
         padding-top: 5%;
         line-height: 2em;
 }
