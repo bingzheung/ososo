@@ -1,7 +1,7 @@
 ---
-title: macOS Handbook - Bing Jeung
+title: macOS Handbook - Bing Jheung
 description: macOS Handbook
-keywords: Bing Jeung, macOS, handbook
+keywords: Bing Jheung, macOS, handbook
 ---
 
 Change macOS screenshot saving location
