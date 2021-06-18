@@ -43,9 +43,8 @@ a {
 }
 a.menu {
         display: block;
-        padding: 1em 2em;
+        padding: 1em 4em;
         text-align: center;
-        font-size: 0.9em;
 }
 a.menu:hover {
         color: #1F9BF3;
@@ -129,11 +128,5 @@ pre {
         body {
                 padding-left: 20%;
                 padding-right: 20%;
-        }
-        a.menu {
-                padding: 1em 4em;
-        }
-        a.menu {
-                padding: 1em 4em;
         }
 }

@@ -1,0 +1,114 @@
+html, body {
+        font-family: -apple-system, BlinkMacSystemFont, SF Pro, Roboto, Segoe UI, Helvetica Neue, Helvetica, Arial, Liberation Sans, ui-sans-serif, sans-serif, Apple Color Emoji, Noto Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        background-color: #efefef;
+}
+
+header {
+        text-align: center;
+}
+ul.menu {
+        display: inline-block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+}
+li.menu {
+        float: left;
+}
+a {
+        text-decoration: none;
+        color: #1F9BF3;
+}
+a.menu {
+        display: block;
+        padding: 1em 4em;
+        text-align: center;
+        color: black;
+}
+a.menu:hover {
+        color: #1F9BF3;
+}
+
+.card {
+        text-align: center;
+        border-radius: 16px;
+        background-color: white;
+        padding: 2%;
+}
+
+.rectangle {
+        color: black;
+        padding: 10px;
+        padding-left: 22px;
+        padding-right: 22px;
+        border: 1px solid black;
+        border-radius: 5px;
+}
+.rectangle:hover {
+        background-color: #1F9BF3;
+        color: white;
+        border: 1px solid #1F9BF3;
+}
+
+img.screenshot {
+        width: 60%;
+}
+img.app-store-badge {
+        width: 150px;
+}
+
+.row {
+        padding: 5% 15%;
+}
+.column {
+        float: left;
+        width: 40%;
+        padding: 0 5%;
+        margin-bottom: 5%;
+}
+
+@media screen and (max-width: 1078px) {
+        .row {
+                padding: 0 15%;
+        }
+        .column {
+                float: left;
+                width: 80%;
+                padding: 5% 10%;
+        }
+        img.screenshot {
+                width: 66%;
+        }
+}
+@media screen and (max-width: 718px) {
+        .row {
+                padding: 5% 0;
+        }
+        .column {
+                width: 100%;
+                display: block;
+                padding: 0;
+        }
+        img.screenshot {
+                width: 80%;
+        }
+}
+
+@media(prefers-color-scheme: dark) {
+        html, body {
+                color: white;
+                background: black;
+        }
+        a.menu {
+                color: white;
+        }
+        .card {
+                background-color: #1c1c1c;
+        }
+        .rectangle {
+                color: white;
+                background-color: black;
+                border: 1px solid black;
+        }
+}
