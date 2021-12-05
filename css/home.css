@@ -1,6 +1,14 @@
 html, body {
-        font-family: -apple-system, BlinkMacSystemFont, SF Pro, Roboto, Segoe UI, Helvetica Neue, Helvetica, Arial, Liberation Sans, ui-sans-serif, sans-serif, Apple Color Emoji, Noto Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+        font-family: -apple-system, BlinkMacSystemFont, SF Pro, Roboto, Segoe UI, Helvetica Neue, Helvetica, Arial, ui-sans-serif, sans-serif, Apple Color Emoji, Noto Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
         background-color: #efefef;
+}
+
+a {
+        text-decoration: none;
+        color: black;
+}
+a:hover {
+        color: #1F9BF3;
 }
 
 header {
@@ -15,22 +23,13 @@ ul.menu {
 }
 li.menu {
         float: left;
-}
-a {
-        text-decoration: none;
-        color: #1F9BF3;
-}
-a.menu {
         display: block;
-        padding: 1em 4em;
+        padding: 1em 3em;
         text-align: center;
-        color: black;
-}
-a.menu:hover {
-        color: #1F9BF3;
 }
 
 .card {
+        line-height: 1.6em;
         text-align: center;
         border-radius: 16px;
         background-color: white;
@@ -97,10 +96,10 @@ img.app-store-badge {
 
 @media(prefers-color-scheme: dark) {
         html, body {
+                background-color: black;
                 color: white;
-                background: black;
         }
-        a.menu {
+        a {
                 color: white;
         }
         .card {
