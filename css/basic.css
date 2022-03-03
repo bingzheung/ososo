@@ -1,28 +1,7 @@
-/*
-@font-face {
-        font-family: "Latin Modern Roman";
-        src: url("../fonts/LMRoman10-Regular.woff2") format("woff2");
-}
-@font-face {
-        font-family: "Latin Modern Roman Caps";
-        src: url("../fonts/LMRomanCaps10-Regular.woff2") format("woff2");
-}
-@font-face {
-        font-family: "Latin Modern Mono";
-        src: url("../fonts/LMMono10-Regular.woff2") format("woff2");
-}
-*/
-
 html, body {
-        font-family: -apple-system, BlinkMacSystemFont, SF Pro, Roboto, Segoe UI, Helvetica Neue, Helvetica, Arial, Source Han Sans K, Noto Sans CJK KR, PingFang HK, Source Han Sans HC, Noto Sans CJK HK, ui-sans-serif, sans-serif, Apple Color Emoji, Noto Color Emoji, Segoe UI Emoji, Segoe UI Symbol, emoji;
+        font-family: -apple-system, BlinkMacSystemFont, SF Pro, Roboto, Segoe UI, Helvetica Neue, Helvetica, Arial, ChiuKong Gothic CL, Source Han Sans K, Noto Sans CJK KR, PingFang HK, Source Han Sans HC, Noto Sans CJK HK, ui-sans-serif, sans-serif, Apple Color Emoji, Noto Color Emoji, Segoe UI Emoji, Segoe UI Symbol, emoji;
         line-height: 1.6em;
 }
-
-/*
-.capital {
-        font-family: Latin Modern Roman Caps;
-}
-*/
 
 header {
         text-align: center;
@@ -68,7 +47,7 @@ hr {
 }
 
 pre, code {
-        font-family: SF Mono, SFMono-Regular, ui-monospace, Menlo, monospace, Source Han Sans K, Noto Sans CJK KR, PingFang HK, Source Han Sans HC, Noto Sans CJK HK, Apple Color Emoji, Noto Color Emoji, Segoe UI Emoji, Segoe UI Symbol, emoji;
+        font-family: SF Mono, SFMono-Regular, ui-monospace, Menlo, monospace, ChiuKong Gothic CL, Source Han Sans K, Noto Sans CJK KR, PingFang HK, Source Han Sans HC, Noto Sans CJK HK, Apple Color Emoji, Noto Color Emoji, Segoe UI Emoji, Segoe UI Symbol, emoji;
 }
 pre {
         overflow: auto;
