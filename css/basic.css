@@ -22,7 +22,7 @@ a {
 }
 a.menu {
         display: block;
-        padding: 1em 4em;
+        padding: 1em 3em;
         text-align: center;
 }
 a.menu:hover {
