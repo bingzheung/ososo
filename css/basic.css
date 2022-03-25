@@ -57,6 +57,13 @@ pre {
         border-radius: 0.3em;
 }
 
+img.button {
+        width: 150px
+}
+img.button-large {
+        width: 300px
+}
+
 @media(prefers-color-scheme: dark) {
         html, body {
                 color: white;
