@@ -22,7 +22,7 @@ a {
 }
 a.menu {
         display: block;
-        padding: 1em 3em;
+        padding: 1em 2em;
         text-align: center;
 }
 a.menu:hover {
@@ -110,7 +110,13 @@ img.button-large {
         }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 1000px) {
+        body {
+                padding-left: 10%;
+                padding-right: 10%;
+        }
+}
+@media (min-width: 1900px) {
         body {
                 padding-left: 20%;
                 padding-right: 20%;
